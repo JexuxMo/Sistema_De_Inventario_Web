@@ -1,0 +1,91 @@
+.ModalAgregar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ModalHeader {
+    padding: 15px;
+    /*margin-left: 10px;
+    width: 98%;*/
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
+    color: #000000;
+}
+
+.ModalHeader h2,
+{
+    margin: 0;
+}
+
+.ModalFooter {
+    height: 60px;
+    padding: 10px;
+    border-radius: 0px;
+    border-top: 1px solid #ccc;
+    color: #000000;
+    text-align: center;
+}
+
+.ModalBody {
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ModalAgregarContent {
+    background-color: #ffffff;
+    margin: 3% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalOpen;
+    animation-duration: 0.8s;
+}
+
+.closeBtn {
+    color: #000;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: crimson;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.InputModal {
+    position: relative;
+    margin: 20px;
+}
+
+.buttonContinuar {
+    background-color: #e68282;
+    color: red;
+}
+
+.buttonContinuar2 {
+    background-color: #75fcc8;
+    color: white;
+    float: right;
+}
+
+.TableModal {
+    border: none;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
